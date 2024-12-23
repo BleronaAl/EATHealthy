@@ -1,0 +1,433 @@
+body {
+    font-family: 'Raleway','Courier New', Courier, monospace;
+}
+
+[class*="col-"] {
+    float: left;
+    display: table;
+  } 
+  
+  /* Mobile First */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  [class*="main-s"] {
+    padding: 10px;
+  }
+/*------------------------------------------------------------------------*/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.mainImg {
+  margin-top: 40px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 25px;
+  color: orange;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.bg-light {
+  background-color: #ffffff !important;
+}
+
+.fa-solid {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.fa-solid:hover {
+   color: orange;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+}
+
+.cards {
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+}
+
+.cards::-webkit-scrollbar {
+  width: 0;
+}
+
+.cards > div {
+  color: #fff7f0;
+  width: 145px;
+  height: 230px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);;
+  border-radius: 15px;
+  margin: 10px;
+  white-space: nowrap;
+}
+
+.cards img {
+  width: inherit;
+  height: inherit;
+  border-radius: 15px;
+}
+
+.info-s {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 20px;
+}
+
+.info-s a {
+  text-decoration: none;
+  font-weight: bold;
+  color: gray;
+}
+
+.info-s a:hover {
+  color: orange;
+}
+
+.fa-cart-shopping, .fa-hand-holding-medical, .fa-calculator {
+  color: orange;
+}
+
+.table-padding h2 {
+  padding-top: 100px;
+}
+
+.calculate {
+  padding: 40px 20px 100px;
+}
+
+.calculate-s {
+  padding-left: 20px;
+}
+
+input {
+  width: 300px;
+  background-color: rgb(250, 240, 226);
+  border: 1px solid orange;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.calc-button {
+  background-color: orange;
+  margin-top: 30px;
+  padding: 10px;
+  color: white;
+  border: 1px solid orange;
+  border-radius: 15px;
+}
+
+.innerHTML p {
+  margin: -15px;
+}
+
+.footer{
+  margin-top: 100px;
+  padding: 50px;
+  color: white;
+  background-color: black;
+}
+
+.footer-part {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+hr {
+  margin: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  margin-top: 15px;
+}
+
+.link:hover {
+  color: orange;
+}
+
+
+
+
+
+
+
+.shop img {
+  width: 80%;
+  height: 300px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.shop img:hover {
+  transform: scale(1.08);
+}
+
+.shop h2 {
+  padding: 100px 0px 25px;
+  text-align: center;
+}
+
+.shop p, h3 {
+  padding-left: 20px
+}
+
+.shop a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+  /* For Tablets View */
+  @media only screen and (min-width: 600px) {
+  
+    .col-s-1 { width: 8.33%; }
+    .col-s-2 { width: 16.66%; }
+    .col-s-3 { width: 25%; }
+    .col-s-4 { width: 33.33%; }
+    .col-s-5 { width: 41.66%; }
+    .col-s-6 { width: 50%; }
+    .col-s-7 { width: 58.33%; }
+    .col-s-8 { width: 66.66%; }
+    .col-s-9 { width: 75%; }
+    .col-s-10 { width: 83.33%; }
+    .col-s-11 { width: 91.66%; }
+    .col-s-12 { width: 100%; }
+
+    /*------------------------------------------------------------------------*/
+    .mainImg {
+      margin-top: 50px;
+      width: 135vh;
+    }
+
+    .info-s {
+      margin-top: 100px;
+    }
+
+    .cards {
+      width: 400px;
+    }
+
+    .location-s-discp {
+      padding: 165px;
+   }
+
+   .shop img {
+    width: 100%;
+    height: 350px;
+  }
+
+  .table-padding {
+    padding: 100px;
+  }
+
+  .calculate {
+    padding: 80px 100px 100px;
+  }
+
+  .iframes-s {
+    margin: 10px;
+  }
+  
+  }
+
+  /* For Desktop View */
+  @media only screen and (min-width: 768px) {
+      
+    .col-1 {  width: 8.33%; }
+    .col-2 { width: 16.66%; }
+    .col-3 { width: 25%; }
+    .col-4 { width: 33.33%; }
+    .col-5 { width: 41.66%; }
+    .col-6 { width: 50%; }
+    .col-7 { width: 58.33%; }
+    .col-8 { width: 66.66%; }
+    .col-9 { width: 75%; }
+    .col-10 { width: 83.33%; }
+    .col-11 { width: 91.66%; }
+    .col-12 { width: 100%; }
+     /*------------------------------------------------------------------------*/
+
+    .mainImg {
+      margin-top: 50px;
+      width: 100%;
+    }
+
+    .main-s h1 {
+      margin-top: 70px;
+    }
+    
+    .cards {
+      width: 500px !important;
+    }
+    
+    .info-s {
+      margin-top: 100px;
+    }
+
+    .shop {
+      padding: 150px;
+    }
+
+    .shop img {
+      width: 100%;
+      height: 400px;
+    }
+
+    .num {
+      text-align: center;;
+    }
+
+    .location-s-discp {
+      padding: 165px;
+   }
+   
+   .table-padding {
+    padding: 100px;
+  }
+
+   .calculate {
+    padding: 80px 100px 100px;
+  }
+
+  iframe {
+    width: 400px !important; 
+    height: 225; 
+  }
+  
+  }
+
+/*------------------------------------------------------------------------*/
+/* About */
+.about-s {
+  margin-top: 50px;
+}
+
+.about-s h1, h2, p {
+  padding: 20px;
+}
+
+.about-s h1, h2 {
+  color: orange;
+  text-align: center;
+}
+
+.importenPeople {
+  display: flex;
+  flex-direction: row;
+}
+
+.importenPeople img {
+  width: 70px;
+  border-radius: 50px;
+  margin: 20px;
+}
+
+#cont1, #cont2, #cont3, #cont4 {
+  display: none;
+}
+
+.frequently p {
+  margin-top: -50px;
+}
+
+.frequently h2 {
+  margin-top: 100px;
+}
+
+#button1, #button2, #button3, #button4 {
+  background-color: white;
+  border: 1px solid white;
+}
+
+
+iframe {
+  width: inherit;
+}
+
+.iframes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.iframes a {
+  text-decoration: none;
+  color: black;
+
+}
+
+.location-s {
+  margin: 100px 0px 0px;
+}
+
+.contactUS a {
+  color: white;
+  text-decoration: none;
+}
+
+.contactUS a:hover {
+  color: orange;
+}
+.login {
+  margin-top: 100px;
+}
+
+.login-s {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.login-s h1 {
+  color: orange;
+}
+
+.register {
+  margin-top: 100px;
+}
+
+.register-s {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.register-s h1 {
+  color: orange;
+}
+
+#logRegisButton {
+  background-color: orange;
+  margin-top: 30px;
+  padding: 10px;
+  color: white;
+  border: 1px solid orange;
+  border-radius: 15px;
+}
